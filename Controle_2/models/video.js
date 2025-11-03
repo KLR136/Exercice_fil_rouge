@@ -2,7 +2,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-const Video = sequelize.define('Video', {
+const Video = sequelize.define('video', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
