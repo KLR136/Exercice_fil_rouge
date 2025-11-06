@@ -9,9 +9,10 @@ Users.hasMany(Tasks);
 Tags.belongsToMany(Tasks, { through: 'TaskTags' });
 Tasks.belongsToMany(Tags, { through: 'TaskTags' });
 
-sequelize.sync({ alter: true });
+//sequelize.sync({ alter: true });
 
 module.exports = {
+    'sequelize': sequelize,
     'tasks': Tasks,
     'users': Users,
     'tags': Tags
